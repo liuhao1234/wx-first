@@ -11,13 +11,15 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.4",
-	"appid": "wxddc603134f83aa49",
+	"libVersion": "2.0.4",
+	"appid": "wx8549f16eef16d1b7",
 	"projectname": "wx-test",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

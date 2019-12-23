@@ -1,0 +1,27 @@
+<view>
+  <swiper 
+    indicator-dots="{{true}}" 
+    autoplay="{{true}}"
+  >
+    <swiper-item><image src="/images/wx.png"></image></swiper-item>
+    <swiper-item><image src="/images/vr.png"></image></swiper-item>
+    <swiper-item><image src="/images/iqiyi.png"></image></swiper-item>
+  </swiper>
+</view>
+<block wx:for="{{posts_list}}" wx:key="index"><!--  wx:item="item" index和item是默认值 -->
+  <view class="post-content">
+    <view class="post-user">
+      <image src="{{item.user_avatar}}"></image>
+      <text class="date">{{item.date}}</text>
+      <view class="user-name"><text>{{item.user_name}}</text></view>
+    </view>
+    <view class="post-img"><image src="{{item.post_img}}"></image></view>
+    <view class="post-text"><text>{{item.text}}</text></view>
+    <view class="post-condition">
+      <image src="/images/icon/none-star.png"></image>
+      <text>{{item.star}}</text>
+      <image src="/images/icon/view.png"></image>
+      <text>{{item.view}}</text>
+    </view>
+  </view>
+</block>
